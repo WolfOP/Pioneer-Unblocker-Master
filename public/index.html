@@ -105,27 +105,7 @@ function myFunction() {
 	<script>
 		function $(id){
 			return document.getElementById(id);
-		}
 		
-		$('unblocker-form').onsubmit = function(){
-			var url = $('url').value;
-			if(url.substr(0,4) === "pornhub.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) === "piratecove.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) === "sex.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) != "http"){
-				url = "http://" + url;}
-			if(url === "http://pornhub.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			if(url === "http://piratecove.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			if(url === "http://sex.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			window.location.pathname = 'proxy/' + url;
-			return false;
-		};
 		
 		function checkError(){
 			var search = window.location.search;
