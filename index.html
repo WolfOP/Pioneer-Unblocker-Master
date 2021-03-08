@@ -2,17 +2,7 @@
 <html>
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154589583-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-154589583-1');
-</script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+	
 	<title>Cynical Unblocker</title>
 	<style>
     body {
@@ -70,7 +60,7 @@
 
 
 	<p>Email: ceejcake@gmail.com</p>
-	<p>Discord: Pittoo#1575</p>
+	<p>Discord: Wolfs#3596</p>
 
 
 <br><br><button class="btn btn-info" onclick="myFunction()">Toggle dark mode (Test, sorta useless)</button>
@@ -95,26 +85,7 @@ function myFunction() {
 	<script>
 		function $(id){
 			return document.getElementById(id);
-		}
 		
-		$('unblocker-form').onsubmit = function(){
-			var url = $('url').value;
-			if(url.substr(0,4) === "pornhub.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) === "piratecove.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) === "sex.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) != "http"){
-				url = "http://" + url;}
-			if(url === "http://pornhub.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			if(url === "http://piratecove.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			if(url === "http://sex.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			window.location.pathname = 'proxy/' + url;
-			return false;
 		};
 		
 		function checkError(){
